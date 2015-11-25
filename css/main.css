@@ -18,6 +18,7 @@ body {
   color: #333333;
   box-sizing: border-box;
   overflow-x: hidden;
+  
 }
 li {
   list-style-type: none;
@@ -181,7 +182,7 @@ img {
 .profile__social {
   display: block;
   height: 505px;
-  background: url(../../images/mid-img.jpg) no-repeat;
+  background: url(../images/mid-img.jpg) no-repeat;
 }
 .profile__bottom {
   clear: both;
@@ -287,7 +288,7 @@ img {
 .about {
   height: 792px;
   overflow: hidden;
-  background: #ffffff url(../../images/bg_header.jpg) no-repeat 50% 0;
+  background: #ffffff url(../images/bg_header.jpg) no-repeat 50% 0;
 }
 .about__inner {
   padding-top: 240px;
@@ -319,7 +320,7 @@ img {
   display: block;
   width: 130px;
   height: 120px;
-  background: url(../../images/bg-iconpng.png) no-repeat;
+  background: url(../images/bg-iconpng.png) no-repeat;
   text-align: center;
   padding-top: 30px;
   color: #fff;
@@ -394,7 +395,7 @@ img {
   padding-left: 10px;
 }
 .contact__input + .contact__input {
-  margin-left: 45px;
+  margin-left: 44px;
 }
 .contact__button {
   border: none;
@@ -417,40 +418,40 @@ img {
   display: block;
 }
 .gallery__item--1 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat 0 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat 0 0;
 }
 .gallery__item--2 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -257px 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat -257px 0;
 }
 .gallery__item--3 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -515px 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat -515px 0;
 }
 .gallery__item--4 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -773px 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat -773px 0;
 }
 .gallery__item--5 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -1030px 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat -1030px 0;
 }
 .gallery__item--6 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -1287px 0;
+  background: url(../images/gallery-sprite.jpg) no-repeat -1287px 0;
 }
 .gallery__item--7 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat 0 -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat 0 -257px;
 }
 .gallery__item--8 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -258px -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat -258px -257px;
 }
 .gallery__item--9 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -515px -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat -515px -257px;
 }
 .gallery__item--10 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -773px -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat -773px -257px;
 }
 .gallery__item--11 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -1030px -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat -1030px -257px;
 }
 .gallery__item--12 {
-  background: url(../../images/gallery-sprite.jpg) no-repeat -1287px -257px;
+  background: url(../images/gallery-sprite.jpg) no-repeat -1287px -257px;
 }
 .gallery__hover-b {
   display: none;
@@ -656,7 +657,7 @@ img {
   margin-top: 40px;
 }
 .main-sphere--bg {
-  background: url(../../images/gadgets.png) no-repeat 80% 63%;
+  background: url(../images/gadgets.png) no-repeat 80% 63%;
 }
 .sphere-list {
   text-align: center;
@@ -746,7 +747,7 @@ img {
 }
 .blog__item {
   margin-top: 18px;
-  margin-left: 18px;
+  margin-left: 16px;
   background-color: #FFF;
   display: inline-block;
   width: 48%;
