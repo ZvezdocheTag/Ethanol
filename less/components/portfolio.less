@@ -2,15 +2,28 @@
 .gallery {
 	display: block;
 	height: 515px;
-	width: 1534px;
+	max-width: 1534px;
 	margin: 0 auto;
+	
+
+	
+
 
 	&__item {
 		position: relative;
 		float: left;
 		width: 16.6666%;
 		height: 257px;
-		cursor: pointer;	
+		cursor: pointer;
+		
+		@media only screen and (min-width: 1100px) and (max-width: 1250px) {
+		width: 20%;
+	}
+
+		@media only screen and (min-width: 960px) and (max-width: 1100px) {
+		width: 25%;
+	}
+	
 		
 		&:hover .gallery__hover-b {
 		display: block;
@@ -27,10 +40,31 @@
 	&__item--6 { background: url(../../images/gallery-sprite.jpg) no-repeat -1287px 0;}
 	&__item--7 { background: url(../../images/gallery-sprite.jpg) no-repeat 0 -257px;}
 	&__item--8 { background: url(../../images/gallery-sprite.jpg) no-repeat -258px -257px;}
-	&__item--9 { background: url(../../images/gallery-sprite.jpg) no-repeat -515px -257px;}
-	&__item--10 { background: url(../../images/gallery-sprite.jpg) no-repeat -773px -257px;}
-	&__item--11 { background: url(../../images/gallery-sprite.jpg) no-repeat -1030px -257px;}
-	&__item--12 { background: url(../../images/gallery-sprite.jpg) no-repeat -1287px -257px;}
+	&__item--9 { background: url(../../images/gallery-sprite.jpg) no-repeat -515px -257px;
+		@media only screen and (min-width: 960px) and (max-width: 1100px) {
+		display: none;
+	}}
+	&__item--10 { background: url(../../images/gallery-sprite.jpg) no-repeat -773px -257px;
+		@media only screen and (min-width: 960px) and (max-width: 1100px) {
+		display: none;
+	}}
+	&__item--11 { background: url(../../images/gallery-sprite.jpg) no-repeat -1030px -257px;
+	@media only screen and (min-width: 1100px) and (max-width: 1250px) {
+		display: none;
+	}
+	@media only screen and (min-width: 960px) and (max-width: 1100px) {
+		display: none;
+	}
+
+}
+	&__item--12 { background: url(../../images/gallery-sprite.jpg) no-repeat -1287px -257px;
+	@media only screen and (min-width: 1100px) and (max-width: 1250px) {
+		display: none;
+	}
+	@media only screen and (min-width: 960px) and (max-width: 1100px) {
+		display: none;
+	}
+	}
 
 }
 

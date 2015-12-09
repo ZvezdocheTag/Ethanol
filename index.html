@@ -23,12 +23,12 @@
     <a href="" class="header__logo logo"><img class="logo__image"src="images/Vector Smart Object.svg" width="45" height="45" alt=""><span class="logo__name">thanol</span></a>
     <nav class="header__menu">
       <ul class="nav-menu clearfix">
-        <li class="li nav-menu__item"><a href="#top-anchor" class="nav-menu__link">home</a></li>
-        <li class="li nav-menu__item"><a href="#about-anchor" class="nav-menu__link">about us</a></li>
-        <li class="li nav-menu__item"><a href="#product-anchor" class="nav-menu__link">products</a></li>
-        <li class="li nav-menu__item"><a href="#testimonials-anchor" class="nav-menu__link">testSimonials</a></li>
-        <li class="li nav-menu__item"><a href="#price-anchor" class="nav-menu__link">pricing</a></li>
-        <li class="li nav-menu__item"><a href="#contact-anchor" class="nav-menu__link">contact</a></li>
+        <li class="li nav-menu__item"><a href="#" class="nav-menu__link link" data-class="home">home</a></li>
+        <li class="li nav-menu__item"><a href="#about-anchor" data-class="about" class="nav-menu__link link">about us</a></li>
+        <li class="li nav-menu__item"><a href="#product-anchor" data-class="products" class="nav-menu__link link">products</a></li>
+        <li class="li nav-menu__item"><a href="#testimonials-anchor" data-class="testimonials" class="nav-menu__link link">testSimonials</a></li>
+        <li class="li nav-menu__item"><a href="#price-anchor" data-class="price" class="nav-menu__link link">pricing</a></li>
+        <li class="li nav-menu__item"><a href="#contact-anchor" data-class="contact" class="nav-menu__link link">contact</a></li>
       </ul>
     </nav>
   </div>
@@ -40,7 +40,7 @@
       <div class="about__center center__inner">
         <h1 class="about__title">website / branding / interactive</h1>
         <h2 class="about__slogan">We create beautiful, innovative and  effective handcrafted brands & website.</h2>
-        <a href="#portfolio-anchor" class="about__btn btn-head">view our work</a>
+        <a href="#portfolio-anchor" data-class="portfolio" class="about__btn btn-head link">view our work</a>
       </div>
     </div>
   </section>
@@ -115,8 +115,7 @@
   </div>
   </section>
 
-  <section class="profile">
-  <a name="testimonials-anchor"></a>
+  <section class="profile testimonials">
   <div class="center__wrapper clearfix">
     <div class="profile__left">
       <div class="profile__social">
@@ -187,8 +186,19 @@
         <h3 class="section-slogan">The right people in the right job</h3>
          <div class="section-sign__logo"><img class="logo__image" src="images/Vector Smart Object.svg" width="42" height="40" alt=""></div>
       </div>
-      <div class="team__slider">
+      <div class="team__slider" id="slider">
         <ul class="slider">
+          <li class="slider__item">
+            <img src="images/girl-1.jpg" width="300" height="450">
+            <div class="slider__name">Maria Shara</div>
+            <div class="slider__surname">founder  - developer</div>
+             <ul class="soc__list team-soc__list">
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-facebook"></i></a></li>
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-twitter"></i></a></li>
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </li>
+       
           <li class="slider__item">
             <img src="images/girl-1.jpg" width="300" height="450">
             <div class="slider__name">Maria Shara</div>
@@ -213,6 +223,16 @@
           <img src="images/girl-1.jpg" width="300" height="450">
             <div class="slider__name">Serena William</div>
             <div class="slider__surname">mobile apps developer</div>
+             <ul class="soc__list team-soc__list">
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-facebook"></i></a></li>
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-twitter"></i></a></li>
+              <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </li>
+           <li class="slider__item">
+          <img src="images/girl-2.jpg" width="300" height="450">
+            <div class="slider__name">Joanna Doe</div>
+            <div class="slider__surname">founder  - Designer</div>
              <ul class="soc__list team-soc__list">
               <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-facebook"></i></a></li>
               <li class="soc__item"><a class="team-soc__link soc__link" href=""><i class="fa fa-twitter"></i></a></li>
@@ -251,6 +271,7 @@ clean company analisis<p>sub title here</p></a></li>
       <p class="main-sphere__dscrp">Vel donec et scelerisque vestibulum. Condimentum aliquam, mollit magna velit nec, tempor cursus vitae sit aliquet neque purus. Ultrices lacus proin conubia dictum tempus, tempor pede vitae faucibus, sem auctor, molestie diam dictum aliquam. Dolor leo, ridiculus est ut cubilia nec, fermentum arcu praesent.</p>
     </div>
   </div></section>
+
   <section class="portfolio">
   <a name="portfolio-anchor"></a>
      <div class="section-sign center__wrapper">
@@ -581,9 +602,10 @@ clean company analisis<p>sub title here</p></a></li>
 
 
   </footer>
-  
 
-	<script href="less.min.js" type="text/javascript"></script>
+
+  <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
 
